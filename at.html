@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Básico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Formulário de Cadastro</h1>
+    <form id="myForm">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br>
+
+        <label for="password">Senha:</label>
+        <input type="password" id="password" required><br>
+
+        <label>Gênero:</label>
+        <input type="radio" name="gender" value="Masculino" required> Masculino
+        <input type="radio" name="gender" value="Feminino" required> Feminino<br>
+
+        <label for="country">País:</label>
+        <select id="country" required>
+            <option value="">Selecione um país</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Portugal">Portugal</option>
+            <option value="Argentina">Argentina</option>
+        </select><br>
+
+        <label for="comments">Comentários:</label><br>
+        <textarea id="comments" rows="4" cols="50"></textarea><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <div id="output"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
